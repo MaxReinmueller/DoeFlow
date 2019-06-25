@@ -15,24 +15,30 @@ body {
 
 .nav {
     background-color: #6bc4e8;
-    
+    margin-bottom: 15px;
 }
 
 .li {
     list-style-type: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
+    
 }
 
-.panel {
-    width: 300px;
-    margin: 30px;
+.breakdowns {
+    width: 275px;
+    margin: 20px;
     float: left;
+}
+
+.totals  {
+    margin: 10px;
 }
 
 .tr {
     padding: 30px;
+}
+
+.row  {
+    width: 960px;
 }
 
 
