@@ -12,23 +12,23 @@ body {
     background-color: #f2ecdb;
 }
 
-.row {
-    width: 160px;
-}
 
 .nav {
-    background-color: #004a98;
-    float: left;
+    background-color: #6bc4e8;
+    
 }
 
 .li {
     list-style-type: none;
-
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
 }
 
 .panel {
-    float: left;
     width: 300px;
+    margin: 30px;
+    float: left;
 }
 
 .tr {
