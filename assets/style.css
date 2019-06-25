@@ -10,6 +10,7 @@ header {
 
 body {
     background-color: #f2ecdb;
+
 }
 
 
@@ -18,15 +19,20 @@ body {
     margin-bottom: 15px;
 }
 
+
 .li {
     list-style-type: none;
     
 }
 
+.panel {
+   
+}
+
 .breakdowns {
-    width: 275px;
+    width: 400px;
     margin: 20px;
-    float: left;
+    
 }
 
 .totals  {
