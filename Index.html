@@ -1,242 +1,55 @@
 <!DOCTYPE html>
-<Html lang="em">
+<html lang="en">
 
-<Head>
+<head>
   <meta charset="UTF-8">
-<title>DoeFlow</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/style.css" type="text/css">
-
-</Head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css" type="text/stylesheet">
+  <title>Home</title>
+</head>
 
 <body>
-<header>
-    <a href="Index.html"> <img id="mainlogo" src="images\Logo-for-Header.png"></a> 
-</header>
-<div class="container">
-    <div class="navrow">
-            <ul class="nav nav-pills">
-                <li role="presentation" ><a href="#">Owed to You</a></li>
-                <li role="presentation"><a href="#">You Owe</a></li>
-                <li role="presentation"><a href="#">Cash</a></li>
-                <li role="presentation"><a href="#">Credit Cards</a></li>
-                <li role="presentation"><a href="#">Loans</a></li>
-                <li role="presentation"><a href="#">Re-occuring Costs</a></li>
-                </ul>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="Index.html">
+    <img src="images/Display-Place-Logo-Faveicon.png" width="30" height="30" alt="">   DoeFlow</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-            
-    </div>
-    <div class="row">
-  <div class="col-sm-4 col-md-3">
-    <div class="thumbnail">
-      <div class="caption">
-        <h3>Owed to You</h3>
-        <h4>$5,000</h4>
-        <p>as of (date)</p>
-        <p><a href="#" class="btn btn-primary" role="button">Update</a> 
-      </div>
-    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="budget.html">Budget Tool</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
-  <div class="col-sm-4 col-md-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>You Owe</h3>
-          <h4>$1,500</h4>
-          <p>as of (date)</p>
-          <p><a href="#" class="btn btn-primary" role="button">Update</a> 
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <div class="caption">
-            <h3>Total Cash</h3>
-            <h4>$13,000</h4>
-            <p>as of (date)</p>
-            <p><a href="#" class="btn btn-primary" role="button">Update</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>Available Credit</h3>
-              <h4>$5,000</h4>
-              <p>as of (date)</p>
-              <p><a href="#" class="btn btn-primary" role="button">Update</a>
-            </div>
-          </div>
-        </div>
-</div>
+</nav>
 
-    <div class="row">
 
-      <div class="col-lg-6">
 
-      <div class="panel panel-default breakdowns">
-            <!-- Default panel"col">contents -->
-            <div class="panel-heading">Owed to You</div>
-          
-            <!-- Table -->
-            <table class="table ">
-            <tr>
-              <th><strong>Name</strong></th>
-              <th><strong>Amount</strong></th>
-              <th><strong>Date</strong></th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>$2000</td>
-                <td>4/17/2019</td>
-            </tr>
-            <tr>
-                    <td>Alex Hays</td>
-                    <td>$100</td>
-                    <td>4/09/2019</td>
-                </tr>
-                <tr>
-                        <td>William Smith</td>
-                        <td>$1959</td>
-                        <td>5/29/2019</td>
-                    </tr>
-            </table>
-        </div>
-        <div class="panel panel-default breakdowns">
-                <!-- Default panel contents -->
-                <div class="panel-heading">You Owe</div>
-              
-                <!-- Table -->
-                <table class="table ">
-                <tr>
-                  <th><strong>Name</strong></th>
-                  <th><strong>Amount</strong></th>
-                  <th><strong>Date</strong></th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>$2000</td>
-                    <td>4/17/2019</td>
-                </tr>
-                <tr>
-                        <td>Alex Hays</td>
-                        <td>$100</td>
-                        <td>4/09/2019</td>
-                    </tr>
-                    <tr>
-                            <td>William Smith</td>
-                            <td>$1959</td>
-                            <td>5/29/2019</td>
-                        </tr>
-                </table>
-            </div>
-            <div class="panel panel-default breakdowns">
-                    <!-- Default panel contents -->
-                    <div class="panel-heading">Cash</div>
-                  
-                    <!-- Table -->
-                    <table class="table ">
-                    <tr>
-                      <th><strong>Account</strong></th>
-                      <th><strong>Amount</strong></th>
-                    </tr>
-                    <tr>
-                        <td>Checking</td>
-                        <td>$2000</td>
-                        <td>4/17/2019</td>
-                    </tr>
-                    <tr>
-                            <td>Savings</td>
-                            <td>$100</td>
-                            <td>4/09/2019</td>
-                        </tr>
-                      
-                    </table>
-                </div>
-              </div>
 
-              <div class="col-lg-6">
 
-                <div class="panel panel-default breakdowns">
-                    <!-- Default panel contents -->
-                    <div class="panel-heading">Credit Cards</div>
-                  
-                    <!-- Table -->
-                    <table class="table ">
-                    <tr>
-                      <th><strong>Account</strong></th>
-                      <th><strong>Amount</strong></th>
-                    </tr>
-                    <tr>
-                        <td>Checking</td>
-                        <td>$2000</td>
-                        <td>4/17/2019</td>
-                    </tr>
-                    <tr>
-                            <td>Savings</td>
-                            <td>$100</td>
-                            <td>4/09/2019</td>
-                        </tr>
-                      
-                    </table>
-                </div>
-                <div class="panel panel-default breakdowns">
-                    <!-- Default panel contents -->
-                    <div class="panel-heading">Loans</div>
-                  
-                    <!-- Table -->
-                    <table class="table ">
-                    <tr>
-                      <th><strong>Account</strong></th>
-                      <th><strong>Amount</strong></th>
-                    </tr>
-                    <tr>
-                        <td>Checking</td>
-                        <td>$2000</td>
-                        <td>4/17/2019</td>
-                    </tr>
-                    <tr>
-                            <td>Savings</td>
-                            <td>$100</td>
-                            <td>4/09/2019</td>
-                        </tr>
-                      
-                    </table>
-                </div>
-                <div class="panel panel-default breakdowns">
-                    <!-- Default panel contents -->
-                    <div class="panel-heading">Re-Occuring Costs</div>
-                  
-                    <!-- Table -->
-                    <table class="table ">
-                    <tr>
-                      <th><strong>Vendor</strong></th>
-                      <th><strong>Class</strong></th>
-                      <th><strong>Amount</strong></th>
-                      <th><strong>Date</strong></th>
-                    </tr>
-                    <tr>
-                        <td>Alex</td>
-                        <td>rent</td>
-                        <td>$2000</td>
-                        <td>4/17/2019</td>
-                    </tr>
-                    <tr>
-                            <td>SDG&E</td>
-                            <td>Utilities</td>
-                            <td>$100</td>
-                            <td>4/09/2019</td>
-                        </tr>
-                      
-                    </table>
-                </div>
-              </div>
-    </div>
-    
-</div>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- jquery and bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
-</Html>
- 
 
-       
+</html>
