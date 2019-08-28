@@ -38,179 +38,219 @@
     <div class="container">
 
         <!-- Display buttons -->
-        <button type="submit" id="wageCdBtn" class="btn btn-primary">show wage input</button>
-        <button type="submit" id="taxCdBtn" class="btn btn-primary">show tax input</button>
-        <button type="submit" id="mthoverviewCdBtn" class="btn btn-primary">show month</button>
-        <button type="submit" id="weekCdBtn" class="btn btn-primary">show week</button>
-
-
-        <!-- Job / pay -->
+        <div class="row" id="topBtn">
+            <button type="submit" id="wageCdBtn" class="btn btn-primary">Profile</button>
+            <button type="submit" id="mthoverviewCdBtn" class="btn btn-primary">Month View</button>
+            <button type="submit" id="weekCdBtn" class="btn btn-primary">Week View</button>
+        </div>
+<!-- profile holder -->
+<div id="userProfile">
+        <table class="table" id="profile">
+                <thead class="thead-light">
+                    <h3>User Profile</h3>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Work Place</th>
+                    <th scope="col">Job Title</th>
+                    <th scope="col">Hourly Wage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+</div>
+        <!-- WageCd -->
         <form id="wageCd" class="hidden">
-            <h1>work and wage input card</h1>
+                <hr>
+            <h5>Profile</h5>
             <!-- place of work -->
-            <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Work</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control" id="inputEmail3" placeholder="Exp. Joe's 5 and Dime">
+            <div class="row">
+                <div class="col-sm-6">
+                        <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-3 col-form-label">Name</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="userName" placeholder="First and Last">
+                                </div>
+                            </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-3 col-form-label">Company Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="workInput" placeholder="Exp. Joe's 5 and Dime">
+                        </div>
+                    </div>
+                    <!-- job title -->
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-3 col-form-label">Job title</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="jobTitle" placeholder="Exp. Cashier">
+                        </div>
+                    </div>
+                    <!-- pay rate -->
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-3 col-form-label">Hourly Wage</label>
+                        <div class="col-sm-9">
+                            <input type="number" class="form-control" id="wageInput" placeholder="Exp. 12">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- job title -->
-            <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Job title</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control" id="inputPassword3" placeholder="Exp. Cashier">
+                <div class="col-sm-6">
+                    <h5>tax info</h5>
+                    <div class="form-group col-md-12">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>California</option>
+                            <option>Arizona</option>
+                            <option>Texas</option>
+                            <option>Utah</option>
+                            <option>Flordia</option>
+                        </select>
+                    </div>
+                    <!-- tax -->
+                    <div class="form-group col-md-12">
+                        <label for="inputState">Est. income range</label>
+                        <select id="incomeInput" class="form-control">
+                            <option selected>$0 - $11,999</option>
+                            <option>$12,000 - $23,999</option>
+                            <option>$24,000 - $49,000</option>
+                            <option>$50,000 +</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <!-- pay rate -->
-            <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Hourly Wage</label>
-                <div class="col-sm-4">
-                    <input type="number" class="form-control" id="inputPassword3" placeholder="Exp. 12">
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-4">
-                    <button type="submit" id="workWageBtn" class="btn btn-primary">Submit</button>
-                </div>
-            </div>
+                <button type="submit" id="workWageBtn" class="btn btn-primary">Submit</button>
         </form>
-
-        <!-- EST TAXES -->
-        <form id="taxCd" class="hidden">
-            <!-- state -->
-            <h1>tax input card</h1>
-            <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                    <option selected>California</option>
-                    <option>Arizona</option>
-                    <option>Texas</option>
-                    <option>Utah</option>
-                    <option>Flordia</option>
-                </select>
-            </div>
-            <!-- tax -->
-            <div class="form-group col-md-4">
-                <label for="inputState">Est. income range</label>
-                <select id="inputState" class="form-control">
-                    <option selected>$0 - $11,999</option>
-                    <option>$12,000 - $23,999</option>
-                    <option>$24,000 - $49,000</option>
-                    <option>$50,000 +</option>
-                </select>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-4">
-                </div>
-            </div>
-        </form>
-
-
-        <!-- Month view w/overide -->
-        <div id="monthOverview" class="hidden">
-            <table class="table table-sm table-hover">
-                <thead>
-                    <h5>month overview</h5>
-                    <h1>January</h1>
-                    <tr>
-                        <th scope="col">Job</th>
-                        <th scope="col">Hours</th>
-                        <th scope="col">Total Pay</th>
-                        <th scope="col">Taxes</th>
-                        <th scope="col">Pay after taxes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Starbucks</th>
-                        <td>160</td>
-                        <td>$1,600.00</td>
-                        <td>$160.00</td>
-                        <td>$1440.00</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Scripps Poway Eye Care</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Totals</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Week view w/overide -->
-        <div id="weekView" class="hidden">
-            <table class="table table-sm table-hover">
-                <thead>
-                    <h5>by week view</h5>
-                    <h1>January</h1>
-                    <h2>Scripps Poway Eye Care</h2>
-                    <tr>
-                        <th scope="col">Week</th>
-                        <th scope="col">Hours</th>
-                        <th scope="col">Total Pay</th>
-                        <th scope="col">Taxes</th>
-                        <th scope="col">Pay after taxes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Week 1</th>
-                        <td>20</td>
-                        <td>$200.00</td>
-                        <td>$50.00</td>
-                        <td>$250.00</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Week 2</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Week 3</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Week 4</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Totals</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Week hours calculator -->
-
-
-        <!-- Quarter / half year / year -->
-
-        <!-- saved situations link -->
-
-
-        <!-- end of container -->
     </div>
+
+    <!-- Month view w/overide -->
+    <div id="monthOverview" class="hidden">
+            <hr>
+        <table class="table table-sm table-hover" id="monthThing">
+            <thead>
+                <h5>month overview</h5>
+                <h1>January</h1>
+                <tr>
+                    <th scope="col">Job</th>
+                    <th scope="col">Hours</th>
+                    <th scope="col">Wage</th>
+                    <th scope="col">Total Pay</th>
+                    <th scope="col">Tax %</th>
+                    <th scope="col">Taxes</th>
+                    <th scope="col">After Tax Total Pay</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Starbucks</th>
+                    <td>160</td>
+                    <td>10</td>
+                    <td>$1,600.00</td>
+                    <td>10</td>
+                    <td>$160.00</td>
+                    <td>$1440.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Scripps Poway Eye Care</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Grand Totals</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Week view w/overide -->
+    <div id="weekView" class="hidden">
+            <hr>
+        <table class="table table-sm table-hover">
+            <thead>
+                <h5>by week view</h5>
+                <h1>January</h1>
+                <h2>Scripps Poway Eye Care</h2>
+                <tr>
+                    <th scope="col">Week</th>
+                    <th scope="col">Hours</th>
+                    <th scope="col">Total Pay</th>
+                    <th scope="col">Taxes</th>
+                    <th scope="col">Pay after taxes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Week 1</th>
+                    <td>20</td>
+                    <td>$200.00</td>
+                    <td>$50.00</td>
+                    <td>$250.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Week 2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Week 3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Week 4</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Totals</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Week hours calculator -->
+
+
+    <!-- Quarter / half year / year -->
+
+    <!-- saved situations link -->
+
+
+    <!-- end of container -->
+    </div>
+
+    <!-- firebase  -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+
+    <!-- jquery from bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -220,7 +260,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+    <!-- Java -->
     <script src="js/logic.js" type="text/javascript"></script>
+    <script src="js/firebase.js" type="text/javascript"></script>
 </body>
 
 </html>

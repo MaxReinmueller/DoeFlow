@@ -1,12 +1,8 @@
-.hidden{
-    display:none;
-}
+.hidden {display:none;}
 
-.unhidden{
-    display:block;
-}
+.unhidden {display:block;}
 
-
+#topBtn {margin-bottom: 15px; margin-top: 15px; display: inline-block;}
 
 /* 
 Colors
