@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css" type="text/stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
     <title>budget</title>
 </head>
 
@@ -36,43 +36,170 @@
         </div>
     </nav>
     <div class="container">
-        <!-- Job / pay / tax est -->
-        <!-- place of work -->
-        <!-- job title -->
-        <!-- pay rate -->
-        <!-- EST TAXES -->
-        <form>
+
+        <!-- Display buttons -->
+        <button type="submit" id="wageCdBtn" class="btn btn-primary">show wage input</button>
+        <button type="submit" id="taxCdBtn" class="btn btn-primary">show tax input</button>
+        <button type="submit" id="mthoverviewCdBtn" class="btn btn-primary">show month</button>
+        <button type="submit" id="weekCdBtn" class="btn btn-primary">show week</button>
+
+
+        <!-- Job / pay -->
+        <form id="wageCd" class="hidden">
+            <h1>work and wage input card</h1>
+            <!-- place of work -->
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Work</label>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <input type="text" class="form-control" id="inputEmail3" placeholder="Exp. Joe's 5 and Dime">
                 </div>
             </div>
+            <!-- job title -->
             <div class="form-group row">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Job title</label>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <input type="text" class="form-control" id="inputPassword3" placeholder="Exp. Cashier">
                 </div>
             </div>
+            <!-- pay rate -->
             <div class="form-group row">
-                    <div class="col-sm-6">
-<!-- FDKSAL;FDJSKALF;DSJAKFLD; LEFT OFF HERE FJDKASL;FJDASKLF;DJSAKLF;DJSAKLF;DJSAKFL;DSAJKFLD;SAJFKDLS -->
-                <label for="customRange1">Example range</label>
-                <input type="range" class="custom-range" id="customRange1">
-            </div>
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Hourly Wage</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="inputPassword3" placeholder="Exp. 12">
+                </div>
             </div>
             <div class="form-group row">
-                <div class="col-sm-6">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="col-sm-4">
+                    <button type="submit" id="workWageBtn" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </form>
 
-        <!-- Month view w/overide -->
+        <!-- EST TAXES -->
+        <form id="taxCd" class="hidden">
+            <!-- state -->
+            <h1>tax input card</h1>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>California</option>
+                    <option>Arizona</option>
+                    <option>Texas</option>
+                    <option>Utah</option>
+                    <option>Flordia</option>
+                </select>
+            </div>
+            <!-- tax -->
+            <div class="form-group col-md-4">
+                <label for="inputState">Est. income range</label>
+                <select id="inputState" class="form-control">
+                    <option selected>$0 - $11,999</option>
+                    <option>$12,000 - $23,999</option>
+                    <option>$24,000 - $49,000</option>
+                    <option>$50,000 +</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4">
+                </div>
+            </div>
+        </form>
 
+
+        <!-- Month view w/overide -->
+        <div id="monthOverview" class="hidden">
+            <table class="table table-sm table-hover">
+                <thead>
+                    <h5>month overview</h5>
+                    <h1>January</h1>
+                    <tr>
+                        <th scope="col">Job</th>
+                        <th scope="col">Hours</th>
+                        <th scope="col">Total Pay</th>
+                        <th scope="col">Taxes</th>
+                        <th scope="col">Pay after taxes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Starbucks</th>
+                        <td>160</td>
+                        <td>$1,600.00</td>
+                        <td>$160.00</td>
+                        <td>$1440.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Scripps Poway Eye Care</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Totals</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <!-- Week view w/overide -->
-
+        <div id="weekView" class="hidden">
+            <table class="table table-sm table-hover">
+                <thead>
+                    <h5>by week view</h5>
+                    <h1>January</h1>
+                    <h2>Scripps Poway Eye Care</h2>
+                    <tr>
+                        <th scope="col">Week</th>
+                        <th scope="col">Hours</th>
+                        <th scope="col">Total Pay</th>
+                        <th scope="col">Taxes</th>
+                        <th scope="col">Pay after taxes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Week 1</th>
+                        <td>20</td>
+                        <td>$200.00</td>
+                        <td>$50.00</td>
+                        <td>$250.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Week 2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Week 3</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Week 4</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Totals</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <!-- Week hours calculator -->
 
@@ -93,6 +220,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="js/logic.js" type="text/javascript"></script>
 </body>
 
 </html>

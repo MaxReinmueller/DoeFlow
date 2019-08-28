@@ -1,47 +1,11 @@
-header {
-    background-color: #004a98;
-    margin: 0;
+.hidden{
+    display:none;
 }
 
-#mainlogo {
-    width: 225px;
-    padding: 10px;
+.unhidden{
+    display:block;
 }
 
-body {
-    background-color: #f2ecdb;
-
-}
-
-
-.nav {
-    background-color: #6bc4e8;
-    margin-bottom: 15px;
-}
-
-
-.li {
-    list-style-type: none;
-    
-}
-
-.breakdowns {
-    width: 400px;
-    margin: 20px;
-    
-}
-
-.totals  {
-    margin: 10px;
-}
-
-.tr {
-    padding: 30px;
-}
-
-.row  {
-    width: 960px;
-}
 
 
 /* 
