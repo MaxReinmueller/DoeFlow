@@ -4,7 +4,7 @@ Doeflow is a tool that helps people visualize their current financial situation,
 
 ## How it works
 
-* set a goal
+* Set a goal
 * Input your estimated income and expenses to get a estimate of how much money is left over everymonth.
 * Use the situation tool to see what you need to do to achieve your goals such as moving.
 
