@@ -4,9 +4,15 @@ Doeflow is a tool that helps people visualize their current financial situation,
 
 ## How it works
 
-Input your estimated income and expenses to get a estimate of how much money is left over everymonth. Compaire it to what you have and 
+* set a goal
+* Input your estimated income and expenses to get a estimate of how much money is left over everymonth.
+* Use the situation tool to see what you need to do to achieve your goals such as moving.
 
 ### Basic financial information
+#### Your goal
+* What is your goal
+* is it monthly income goal or a specific amount of savings?
+* How much money do you think you need to achieve it
 
 #### Income
 * Your hourly wage or monthly salary
@@ -29,7 +35,8 @@ Input your estimated income and expenses to get a estimate of how much money is 
 * IDK but I spent it on something
 
 #### Your thoughts
-
+* how much money do you think is left over every month?
+* if not why?
 
 
 ## How it works
