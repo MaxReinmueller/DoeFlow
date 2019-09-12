@@ -1,3 +1,7 @@
+Breakdown use cases is
+* inser financial data
+Oath2
+
 # DoeFlow
 
 Doeflow is a tool that helps people visualize their current financial situation, "what if I???" situation and achieve their goals.
