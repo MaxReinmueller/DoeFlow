@@ -5,12 +5,12 @@ Doeflow is a tool that helps people visualize their current financial situation,
 ## How it works
 
 * Set a goal
-* Input your estimated income and expenses to get a estimate of how much money is left over everymonth.
+* Input your estimated income and expenses to get a estimate of how much money is left over every month.
 * Use the situation tool to see what you need to do to achieve it.
 
 ### Getting Started info
 #### Your goal
-* What is your goal
+* What is your goal?
 * is it monthly income goal or a specific amount of savings?
 * How much money do you think you need to achieve it
 
@@ -58,10 +58,6 @@ Doeflow is a tool that helps people visualize their current financial situation,
 * React
 * mySQL
 
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
