@@ -41,7 +41,8 @@ Doeflow is a tool that helps people visualize their current financial situation,
 
 ## How it works
 ### how much do you have?
-#### Living money (money left after bills)
+#### Living money 
+- money left after bills
 DoeFlow subtracts "Bills that are the same every month from your monthly income to give you your "living money".
 #### Whats left (money left after expenses that vary)
 "Expenses that vary" are subtracted from your "living money" to give you "money for goals".
