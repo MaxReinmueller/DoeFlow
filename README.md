@@ -1,6 +1,4 @@
-Breakdown use cases is
-* inser financial data
-Oath2
+An idea for a passion project that was planned but not implimented due to time spent on homework.
 
 # DoeFlow
 
